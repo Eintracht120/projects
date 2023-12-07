@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew D. Viney - Portfolio</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-right: 1px solid #ddd;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Light theme styles */
+        body.light {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .light .sidebar a {
+            color: #333;
+        }
+
+        .light .sidebar a:hover {
+            color: #555;
+        }
+
+        .light-toggle {
+            display: none;
+        }
+
+        /* Dark theme styles */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dark .sidebar a {
+            color: #fff;
+        }
+
+        .dark .sidebar a:hover {
+            color: #bbb;
+        }
+
+        .dark-toggle {
+            display: none;
+        }
+
+        /* Toggle button styles */
+        .toggle-btn {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .toggle-btn:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<!-- ... Previous head content ... -->
+
+<body class="light">
+    <div class="sidebar">
+        <h2>Matthew D. Viney</h2>
+        <a href="#" onclick="showTab('resume')">Resume</a>
+        <a href="#" onclick="showTab('projects')">Projects</a>
+        <a href="#" onclick="showTab('about')">About Me</a>
+        <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+    </div>
+
+    <div class="content">
+        <div class="section" id="resume-tab">
+          <!-- ... previous code ... -->
+
+<div class="content">
+
+  <div class="section" id="resume">
+      <h2>Resume</h2>
+
+      <br>
+
+      <h3>Work Experience</h3>
+
+      <p><strong>Nov. 2020-Present:</strong> Energy Sustainability Analyst, APTIM, Madison, WI</p>
+      <ul>
+          <li>Develop dashboards to monitor customer satisfaction and participation scores and other KPIs</li>
+          <li>Collaborate with Programs staff to solicit ideas for new tools, define acceptance criteria, and release products iteratively</li>
+          <li>Oversee publication of TRM and creation/maintenance of measures in Customer Relationship Management Tool</li>
+      </ul>
+      <p><strong>Nov. 2018-April 2020:</strong> Research Assisstant, Friedrich Schiller University, Jena, Germany</p>
+      <ul>
+          <li>Cleaned data for use in research projects</li>
+          <li>Organized presentation materials for courses</li>
+          <li>Reviewed academic articles and journals</li>
+      </ul>
+      <p><strong>Jan. 2018-Sep. 2018:</strong> Buyer II, Generac Power Systems, Jefferson, WI</p>
+      <ul>
+          <li>Responsible for procurement of power washer and fabrication components</li>
+          <li>Drove consignment and vendor managed initiatives to increase inventory turns</li>
+          <li>Worked cross-functionally with Engineering oto launch new products</li>
+      </ul>
+
+      <h3>Education</h3>
+
+      <p><strong>Oct. 2018-Oct. 2020:</strong> Friedrich-Schiller-Universität (Jena, Germany)</p>
+      <ul>
+          <li>Master of Science Economics</li>
+          <li>Specialization: Innovation and Change</li>
+          <li>Thesis: EU ETS and “Green” Innovation: An Analysis of Selected Countries</li>
+          <li>Grade: Sehr Gut (Very Good)</li>
+      </ul>
+
+      <p><strong>Sept. 2013-Dec. 2017:</strong> University of Wisconsin–Whitewater</p>
+      <ul>
+          <li>Bachelor of Business Administration</li>
+          <li>Majors: Economics and German</li>
+          <li>Cumulative GPA: 3.7/4</li>
+      </ul>
+
+      <p><strong>Sept. 2015-Aug. 2016:</strong> Goethe Universität (Frankfurt, Germany)</p>
+      <ul>
+          <li>Year-long academic exchange</li>
+          <li>Faculty of Economics and Business Administration</li>
+          <li>Courses held in German and English</li>
+      </ul>
+
+      <!-- ... Additional work experiences, education, accomplishments, and skills ... -->
+
+  </div>
+
+</div>
+
+<!-- ... remaining code ... -->
+
+        </div>
+
+      <div class="section" id="projects-tab" style="display: none;">
+        <div class="project-card">
+            <h4>Project 1</h4>
+            <p>Description of Project 1.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>Project 2</h4>
+            <p>Description of Project 2.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>Project 3</h4>
+            <p>Description of Project 3.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>Project 4</h4>
+            <p>Description of Project 4.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>Project 5</h4>
+            <p>Description of Project 5.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>Project 6</h4>
+            <p>Description of Project 6.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>Project 7</h4>
+            <p>Description of Project 7.</p>
+        </div>
+
+        <div class="project-card">
+            <h4>Project 8</h4>
+            <p>Description of Project 8.</p>
+        </div>
+    </div>
+
+
+    <div class="section" id="about-tab" style="display: none;">
+    <h2>About Me</h2>
+
+    <p>
+        Aside from work, I enjoy traveling with friends made from my time studying abroad. I relish every opportunity to speak German, injecting conversations with quirky literal words like "Glühbirne" (lightbulb, literally, glowing pear) and sharing the joy of unraveling expressions like "Backpfeifengesicht" (a face in need of a slap).
+        For my non-German-speaking friends, I enjoy diving into the etymological origins of  German last names.
+    </p>
+
+    <p>
+      I also enjoy a bit of woodworking on the side. Although my designs are rather utilitarian at the moment, I look forward to improving my skills (and keeping my fingers) and slowly expanding my arsenals of tools/
+    </p>
+
+    <p>
+
+    </p>
+</div>
+
+
+
+    </div>
+
+    <script>
+        function showTab(tab) {
+            // Hide all tabs
+            document.getElementById('resume-tab').style.display = 'none';
+            document.getElementById('projects-tab').style.display = 'none';
+            document.getElementById('about-tab').style.display = 'none';
+
+            // Show the selected tab
+            document.getElementById(tab + '-tab').style.display = 'block';
+        }
+
+        function toggleTheme() {
+            const body = document.querySelector('body');
+            if (body.classList.contains('light')) {
+                body.classList.replace('light', 'dark');
+                document.querySelector('.toggle-btn').textContent = '☀️';
+            } else {
+                body.classList.replace('dark', 'light');
+                document.querySelector('.toggle-btn').textContent = '🌙';
+            }
+        }
+    </script>
+</body>
